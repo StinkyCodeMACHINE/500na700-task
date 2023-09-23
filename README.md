@@ -16,7 +16,7 @@
 
 ### Ссылки
 
-- Хостинг: [https://fancy-sunburst-30cd01.netlify.app/](https://fancy-sunburst-30cd01.netlify.app/)
+- Хостинг: [https://lustrous-halva-48657a.netlify.app/](https://lustrous-halva-48657a.netlify.app/)
 
 ## Что и как?
 
