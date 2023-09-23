@@ -1,0 +1,112 @@
+@use "../util/functions" as u;
+
+.subscription {
+  padding: u.rem(50) u.rem(100);
+  background-color: var(--white);
+
+  h2 {
+    color: var(--black);
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 85px; /* 106.25% */
+    letter-spacing: -2.4px;
+    margin-bottom: u.rem(30);
+  }
+
+  p {
+    width: 400px;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: u.rem(15);
+  }
+
+  &__form {
+    max-width: 820px;
+    display: grid;
+    gap: u.rem(20);
+    grid-template-columns: repeat(auto-fit, 400px);
+
+    input {
+      display: flex;
+      gap: 10px;
+      padding: u.rem(14) u.rem(15) u.rem(16) u.rem(20);
+      justify-content: center;
+      align-items: center;
+      //   gap: 10px;
+
+      color: var(--black-but-boring);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+
+      &:focus {
+        border: 1px solid var(--black-but-boring);
+      }
+    }
+  }
+
+  button {
+    display: inline-flex;
+    cursor: pointer;
+    padding: 14px 20px 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    margin-top: u.rem(20);
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      background-color: #75ff72;
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding: 3.125rem 2.25rem;
+
+    &__form {
+      grid-template-columns: repeat(auto-fit, 250px);
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      width: 275px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    padding: u.rem(30) u.rem(11) u.rem(50) u.rem(11);
+    gap: u.rem(20);
+
+    h2 {
+      margin-bottom: u.rem(20);
+
+      font-size: 40px;
+      letter-spacing: -1.2px;
+    }
+
+    p {
+      width: 275px;
+      margin-bottom: u.rem(20);
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: u.rem(10);
+    }
+  }
+}
